@@ -105,13 +105,11 @@ public class Tester
                 	{
                 		mode=entry.getKey();
                 		firstValue=entry.getValue();
-                		firstKey=entry.getKey();
                 	}
                 	else if(firstValue==entry.getValue())
                     {
                     		mode= (firstKey<entry.getKey())?firstKey:entry.getKey();   
                     		firstValue=entry.getValue();
-                    		firstValue=entry.getKey();
                     }
                     
                 }
