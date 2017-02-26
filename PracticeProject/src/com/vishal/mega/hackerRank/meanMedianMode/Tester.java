@@ -1,6 +1,8 @@
 package com.vishal.mega.hackerRank.meanMedianMode;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
@@ -62,26 +64,19 @@ public class Tester
         
         Map<Integer,Integer> map=new TreeMap<Integer,Integer>();
         
-        for(int i=0;i<list.size()-1;)
+        for(Integer i:list)
         {
-            int count=1;
-            
-            for(int j=i+1;j<list.size();j++)
-            {
-                if(list.get(i)==list.get(j))
-                {
-                    count++;
-                    
-                }
-            }
-            
-             if(count>1)
-             {
-                map.put(list.get(i),count);  
-             }
-             
-             i=i+count;
-        }    
+        	Integer retrieveValue=map.get(i);
+        	if(null==retrieveValue)
+        	{
+        		map.put(i, 1);
+        	}
+        	else
+        	{
+        		map.put(i, retrieveValue+1);
+        	}
+        }
+         
         
         if(map.isEmpty())
         {
@@ -89,48 +84,24 @@ public class Tester
         }
         else
         {
-            Iterator<Entry<Integer,Integer>> iterator = map.entrySet().iterator();
             
-            int firstKey=0;
-            int firstValue=0;
-		    
-            while (iterator.hasNext()) 
-            {
+                	Map.Entry<Integer, Integer> maxEntry = null;
 
-			    Map.Entry<Integer,Integer> entry = (Map.Entry<Integer,Integer>) iterator.next();
-                
-                if(firstValue!=0)
-                {
-                	if(firstValue<entry.getValue())
+                	for (Map.Entry<Integer, Integer> entry : map.entrySet())
                 	{
-                		mode=entry.getKey();
-                		firstValue=entry.getValue();
+                	    if (maxEntry == null || entry.getValue().compareTo(maxEntry.getValue()) > 0)
+                	    {
+                	        maxEntry = entry;
+                	    }
                 	}
-                	else if(firstValue==entry.getValue())
-                    {
-                    		mode= (firstKey<entry.getKey())?firstKey:entry.getKey();   
-                    		firstValue=entry.getValue();
-                    }
-                    
-                }
-                else
-                {
-                    firstKey=entry.getKey();
-                    firstValue=entry.getValue();
-                }
-                
-                
-                if(mode==0)
-                {
-                    mode=firstKey;
-                }
-			    
-		    }
+                	
+                	mode=maxEntry.getKey();
         }
        
+        DecimalFormat df2 = new DecimalFormat(".#");
         
-        System.out.println(mean);
-        System.out.println(median);
+        System.out.println(df2.format(mean));
+        System.out.println(df2.format(median));
         System.out.println(mode);
        }
     }
