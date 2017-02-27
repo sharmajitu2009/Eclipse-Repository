@@ -11,7 +11,7 @@ import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class Tester 
+public class Solution 
 {
 
     public static void main(String[] args) 
