@@ -1,4 +1,4 @@
-package com.vishal.mega.Mart;
+package com.vishal.mega.mart;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
