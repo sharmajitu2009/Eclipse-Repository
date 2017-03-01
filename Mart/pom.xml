@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.vishal.mega</groupId>
-    <artifactId>Mart</artifactId>
+    <artifactId>HelloWorld</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>Mart</name>
 
     <build>
-        <finalName>Mart</finalName>
+        <finalName>HelloWorld</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
