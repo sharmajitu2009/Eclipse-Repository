@@ -1,4 +1,4 @@
-package com.my.app.hello;
+package com.my.app.Hello;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
