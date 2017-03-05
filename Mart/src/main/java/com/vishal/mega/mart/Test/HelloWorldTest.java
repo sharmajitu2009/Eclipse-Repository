@@ -1,4 +1,4 @@
-package com.vishal.mega.mart.test;
+package com.vishal.mega.mart.Test;
 
 import static org.junit.Assert.*;
 
