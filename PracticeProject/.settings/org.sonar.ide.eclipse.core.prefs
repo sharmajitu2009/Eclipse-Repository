@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
 extraProperties=
-lastAnalysisDate=1488708872439
-projectKey=com.my.app\:Hello
+lastAnalysisDate=1488715849550
+projectKey=sonar-runner
 serverUrl=http\://localhost\:9000
 version=2
