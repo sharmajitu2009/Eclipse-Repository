@@ -1,4 +1,4 @@
-package com.my.app.Hello;
+package com.my.app.helloo;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -25,13 +25,7 @@ public class MyResource {
     
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public Integer test1() {
-        return 10;
-    }
-    
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public Integer test2() {
-        return null;
+    public String getIt2() {
+        return "Got it!";
     }
 }
