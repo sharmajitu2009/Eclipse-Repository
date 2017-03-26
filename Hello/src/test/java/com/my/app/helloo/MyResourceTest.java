@@ -20,7 +20,7 @@ public class MyResourceTest
 	{
 		MyResource myResource=new MyResource();
 		
-		String s2=myResource.getIt2();
+		String s2=myResource.getIt1();
 		
 		Assert.assertNotNull(s2);
 	}
