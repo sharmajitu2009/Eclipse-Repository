@@ -34,4 +34,10 @@ public class MyResource {
     public Integer test2() {
         return 20;
     }
+    
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public Integer test3() {
+        return 20;
+    }
 }
