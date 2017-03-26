@@ -32,6 +32,6 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public Integer test2() {
-        return null;
+        return 20;
     }
 }
