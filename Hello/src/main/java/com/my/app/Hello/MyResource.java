@@ -1,6 +1,9 @@
 package com.my.app.Hello;
 
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -23,19 +26,19 @@ public class MyResource {
         return "Got it!";
     }
     
-    @GET
+    @POST
     @Produces(MediaType.TEXT_PLAIN)
     public Integer test1() {
         return 10;
     }
     
-    @GET
+    @PUT
     @Produces(MediaType.TEXT_PLAIN)
     public Integer test2() {
         return 20;
     }
     
-    @GET
+    @DELETE
     @Produces(MediaType.TEXT_PLAIN)
     public Integer test3() {
         return 20;

@@ -1,6 +1,7 @@
 package com.my.app.helloo;
 
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -9,7 +10,7 @@ import javax.ws.rs.core.MediaType;
  * Root resource (exposed at "mytest" path)
  */
 @Path("mytest")
-public class MyResource {
+public class Test2 {
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
@@ -23,7 +24,7 @@ public class MyResource {
         return "Got it!";
     }
     
-    @GET
+    @POST
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt1() {
         return "Got it!";

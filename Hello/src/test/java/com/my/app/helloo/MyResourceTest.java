@@ -8,7 +8,7 @@ public class MyResourceTest
 	@Test
 	public void getIt()
 	{
-		MyResource myResource=new MyResource();
+		Test2 myResource=new Test2();
 		
 		String s1=myResource.getIt();
 		
@@ -18,7 +18,7 @@ public class MyResourceTest
 	@Test
 	public void getIt2()
 	{
-		MyResource myResource=new MyResource();
+		Test2 myResource=new Test2();
 		
 		String s2=myResource.getIt1();
 		
