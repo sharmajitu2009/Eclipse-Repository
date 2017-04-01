@@ -21,7 +21,7 @@ public class Test2 {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "Got it!";
+        return " My Test Got it!";
     }
     
     @POST
