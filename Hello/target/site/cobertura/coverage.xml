@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+
+<coverage line-rate="0.75" branch-rate="1.0" lines-covered="6" lines-valid="8" branches-covered="0" branches-valid="0" complexity="1.0" version="2.1.1" timestamp="1491123567870">
+	<sources>
+		<source>D:/Source/Working workSpace/1 EclipseWorkspace/1 Project/Achievments/DevOps/01 Git (Version Control)/Git Repository For Eclipse/Eclipse-Repository/Hello/src/main/java</source>
+		<source>--source</source>
+	</sources>
+	<packages>
+		<package name="com.my.app.Hello" line-rate="0.6" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="com.my.app.Hello.MyResource" filename="com/my/app/Hello/MyResource.java" line-rate="0.6" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="15" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getIt" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="26" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="test1" signature="()Ljava/lang/Integer;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="32" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="test2" signature="()Ljava/lang/Integer;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="38" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="test3" signature="()Ljava/lang/Integer;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="44" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="15" hits="2" branch="false"/>
+						<line number="26" hits="0" branch="false"/>
+						<line number="32" hits="1" branch="false"/>
+						<line number="38" hits="1" branch="false"/>
+						<line number="44" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="com.my.app.helloo" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="com.my.app.helloo.Test2" filename="com/my/app/helloo/Test2.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="13" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getIt" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="24" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getIt1" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="30" hits="1" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="13" hits="2" branch="false"/>
+						<line number="24" hits="1" branch="false"/>
+						<line number="30" hits="1" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>
