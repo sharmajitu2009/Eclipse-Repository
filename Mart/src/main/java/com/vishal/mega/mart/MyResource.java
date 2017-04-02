@@ -5,11 +5,16 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Root resource (exposed at "myresource" path)
  */
 @Path("myresource")
-public class MyResource {
+public class MyResource 
+{
+	private final Logger logger=LoggerFactory.getLogger(MyResource.class);
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
@@ -19,7 +24,9 @@ public class MyResource {
      */
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public String getIt() {
+    public String getIt() 
+    {
+    	logger.info("Begin MyResource: getIt()");
         return "Got it!";
     }
 }
