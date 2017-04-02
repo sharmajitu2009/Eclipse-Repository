@@ -23,7 +23,7 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "My Resource Jitendra Sharma!";
+        return "Jitendra Sharma!";
     }
     
     @POST
