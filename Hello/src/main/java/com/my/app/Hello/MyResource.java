@@ -32,7 +32,7 @@ public class MyResource
     	logger.info("Begin MyResource: getIt()");
     	
     	
-        return "Jitendra Sharma!";
+        return "Jeetu Sharma!";
     }
     
     @POST
